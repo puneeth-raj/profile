@@ -1,0 +1,280 @@
+
+
+
+ * {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: Brushstroke, fantasy;
+  color: #d6bdbd;
+}
+
+body {
+
+  background-color: #201e1e;
+  /* overflow: none; */
+ font-family:cursive, Fantasy;
+}
+html {
+  scroll-padding-top: 80px; /* height of sticky header */
+}
+
+.bg {
+  /* The image used */
+  background-image: url("/image/bg.jpg");
+
+  /* Full height */
+  height: auto;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  font-size: 3em;
+  text-align: center;
+  color:rgb(255, 254, 254);
+  font-style:italic;
+  font-weight:900;
+  margin-top: 70px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.menu{
+  width:20%;
+}
+
+.navbar{
+  padding: 6px 8px 6px 16px;
+  /* background-color: rgb(211, 24, 24); */
+  height: 65px;
+}
+.navbar a{
+  float:left ;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+.navbar a:hover{
+  background-color: rgb(185, 42, 7);
+}
+.active{
+  background-color: #4CAF50;
+}
+
+ .acc{
+  
+text-align: center;
+  align-content: center;
+  color: rgb(238, 254, 255);
+  font-size: 1.2em;
+
+}
+.section{
+  font-size: 2em;
+  color: rgb(255, 13, 13);
+  text-decoration: underline;
+  margin-top:100px ;
+
+}
+
+.footer{
+  /* background-color: var(--second-color); */
+  background-color: rgb(94, 0, 0);
+  color: #fff;
+  text-align: center;
+  font-weight: var(--font-semi);
+  padding: 1em 0;
+}
+.footer__title{
+  font-size: 2rem;
+  margin-bottom: var(--mb-4);
+}
+.footer__social{
+  margin-bottom: var(--mb-4);
+}
+.footer__icon{
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 var(--mb-2);
+}
+/* contact */
+.contact__form{
+  /* width: 360px; */
+
+}
+.contact__container{
+  justify-items: center;
+}
+.contact__form{
+  align-items: center;
+}
+.contact__input{
+  width: 100%;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 1.5px solid black;
+  outline: none;
+  margin-bottom: 10px;
+}
+.contact__button{
+  display: block;
+  border: 2px;
+  outline:darkblue;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  margin: auto;
+  border: 1.5px solid black;
+  border-radius: .5rem;
+  background-color: chocolate;
+  align-content: center;
+}
+.topnav{
+  display: none;
+} 
+/* skills section styling */
+.skills .skills-content .column{
+  width: calc(50% -30px);
+}
+
+.skills .skills-content .right .bars{
+  margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skills-content .right span{
+  font-weight: 500;
+  font-size: 18px;
+}
+.skills .skills-content .right .line{
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+.skills .skills-content .right .line::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(2, 27, 255);
+}
+.skills-content .right .html::before{
+  width: 80%;
+  animation: html 2s;
+}
+.skills-content .right .css::before{
+  width: 70%;
+  animation: css 2s;
+}
+.skills-content .right .js::before{
+  width: 50%;
+  animation: js 2s;
+}
+.skills-content .right .php::before{
+  width: 70%;
+  animation: php 2s;
+}
+.skills-content .right .mysql::before{
+  width: 70%;
+  animation: mysql 2s;
+}
+.skills-content .right .photoshop::before{
+  width: 50%;
+  animation: photoshop 2s;
+}
+li{
+  list-style-type:none;
+  color:darkgoldenrod ;
+}
+@media only screen and (max-width: 600px) {
+  
+  body {
+    width: auto;
+    background-color: #2b2323;
+    /* overflow: none; */
+    font-family:cursive, Fantasy;
+    overflow:visible;
+  }
+
+  .container {
+   display: none;
+  }
+  .acc{
+   
+    color: rgb(238, 254, 255);
+    font-size: 1.2em;
+    align-content: center;
+  }
+  .section{
+    font-size: 2em;
+    color: rgb(255, 13, 13);
+    text-decoration: underline;
+    margin-top:100px ;
+  
+  }
+  
+  /* side menu*/
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+ display: block;
+
+  }
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #010201;
+  color: white;
+}
+  
+   /*  */
+}
+/* tabs */
